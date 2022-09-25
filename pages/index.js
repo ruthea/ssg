@@ -18,21 +18,19 @@ function HomePage({ posts }) {
   return (
     <>
       <Head>
-        <title>my cool blog</title>
+        <title>my Cool blog</title>
         <meta name="description" value="This is my blog" />
       </Head>
       <main>
         <h1>my blog articles</h1>
         <ul>
-          {posts.map((post) => 
-            (
-              <li key={post.slug}>
-                <Link href={`/posts/${post.slug}`}>
-                  <a>{post.title}</a>
-                </Link>
-              </li>
-            )
-          )}
+          {posts.map((post) => (
+            <li key={post.slug}>
+              <Link href={`/posts/${post.slug}`}>
+                <a>{post.title}</a>
+              </Link>
+            </li>
+          ))}
         </ul>
       </main>
     </>

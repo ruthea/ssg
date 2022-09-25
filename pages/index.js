@@ -18,7 +18,7 @@ function HomePage({ posts }) {
   return (
     <>
       <Head>
-        <title>my blog</title>
+        <title>my cool blog</title>
         <meta name="description" value="This is my blog" />
       </Head>
       <main>
